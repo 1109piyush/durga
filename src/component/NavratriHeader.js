@@ -114,7 +114,6 @@ function NavratriHeader() {
                 className="w-full h-48 object-cover"
               />
               <h2 className="text-lg font-semibold mt-2">{product.title}</h2>
-              <p className="mt-1">{product.shortDescription}</p>
             </Link>
           </div>
         ))}

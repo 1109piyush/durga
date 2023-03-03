@@ -54,12 +54,12 @@ function ProductPage() {
           >
             Stop Music
           </button>
+      <audio ref={audioRef} src={product.music} />
       </div>
     </div>
       <div className="p-4 w-full">
         <p className="text-gray-700 text-base">{product.longDescription}</p>
       </div>
-      <audio ref={audioRef} src={product.music} />
     </>
   );
 };
