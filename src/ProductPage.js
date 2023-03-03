@@ -28,6 +28,7 @@ function ProductPage() {
   };
 
   return (
+    <>
     <div className="flex flex-col lg:flex-row bg-white rounded-lg shadow-md overflow-hidden">
       <div className="w-full lg:w-1/2">
         <img
@@ -54,11 +55,12 @@ function ProductPage() {
             Stop Music
           </button>
       </div>
+    </div>
       <div className="p-4 w-full">
         <p className="text-gray-700 text-base">{product.longDescription}</p>
       </div>
       <audio ref={audioRef} src={product.music} />
-    </div>
+    </>
   );
 };
 
